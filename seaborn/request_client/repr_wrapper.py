@@ -1,5 +1,5 @@
-"""" This contains decorators for making returns nicer to work with in and
-     IDLE or Ipython """
+""" This contains decorators for making returns nicer to work with in and
+    IDLE or Ipython """
 import pprint
 from StringIO import StringIO
 import sys
