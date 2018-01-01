@@ -39,7 +39,7 @@ def set_pprint_format(indent=None, width=None, depth=None):
     This will set the constants for the pprint
     :param indent: number of spaces to indent
     :param width: max width of the line
-    :param depth: mas depth of the objects
+    :param depth: max depth of the objects
     :return: current settings
     """
     if indent is not None:
@@ -218,7 +218,7 @@ class ReprListList(list):
         if len(rep_data) == 0: return rep_data
 
         for row in data[start:]:
-            rep_data.append([_repr(r, digits, True, False) for r in row])
+            rep_data.append([_repr(r, digits, True) for r in row])
 
         widths = []
         for col in range(size):
