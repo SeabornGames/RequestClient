@@ -2,7 +2,9 @@
      IDLE or Ipython """
 import pprint
 from StringIO import StringIO
+import sys
 
+BASESTRING = str if sys.version_info[0] == 3 else basestring
 PPRINT_INDENT = 2
 PPRINT_WIDTH = 80
 PPRINT_DEPTH = 5
@@ -49,13 +51,10 @@ def set_pprint_format(indent=None, width=None, depth=None):
     return PPRINT_FORMAT
 
 
-def _repr(r, digits=None, convert_unicode=False, quotes=True):
+def _repr(r, digits=None, quotes=True):
     if digits is not None and isinstance(r, float):
         r = str(round(r, digits))
         r += '0' * (digits - len(r.split('.')[-1]))
-
-    if convert_unicode and isinstance(r, unicode):
-        r = r.encode('ascii', errors='replace')
 
     if quotes:
         return repr(r)
@@ -70,7 +69,7 @@ def repr_return(func):
 
     def repr_return_decorator(*args, **kwargs):
         ret = func(*args, **kwargs)
-        if isinstance(ret, basestring):
+        if isinstance(ret, BASESTRING):
             return ret
 
         if type(ret) in repr_map:
@@ -86,7 +85,7 @@ def repr_return(func):
 
 
 class ReprDict(dict):
-    __class__ = {}.__class__
+    __class__ = dict
 
     def __init__(self, original_dict, col_names=None, col_types=None):
         dict.__init__(self, original_dict)
