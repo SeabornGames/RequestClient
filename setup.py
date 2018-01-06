@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='seaborn_request_client',
@@ -13,6 +13,7 @@ setup(
     author='Ben Christenson',
     author_email='Python@BenChristenson.com',
     url='https://github.com/SeabornGames/RequestClient',
+    packages=['seaborn']+['seaborn.'+i for i in find_packages(where = './seaborn')],
     install_requires=[
         'seaborn_meta',
         'pyopenssl',
