@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='seaborn_request_client',
+    name='seaborn-request-client',
     version='0.0.1',
     description='Request Client creates and maintains connections using '
                 'the request library, but make each url endpoint a remote'
@@ -13,7 +13,8 @@ setup(
     author='Ben Christenson',
     author_email='Python@BenChristenson.com',
     url='https://github.com/SeabornGames/RequestClient',
-    packages=['seaborn']+['seaborn.'+i for i in find_packages(where = './seaborn')],
+    packages=['seaborn'] + ['seaborn.' + i
+                            for i in find_packages(where='./seaborn')],
     install_requires=[
         'seaborn_meta',
         'pyopenssl',
