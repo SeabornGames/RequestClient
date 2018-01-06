@@ -1,7 +1,12 @@
 """" This contains decorators for making returns nicer to work with in and
      IDLE or Ipython """
 import pprint
-from StringIO import StringIO
+import sys
+if sys.version==[2]:
+    from StringIO import StringIO
+else:
+    from io import StringIO
+    unicode = str
 
 PPRINT_INDENT = 2
 PPRINT_WIDTH = 80

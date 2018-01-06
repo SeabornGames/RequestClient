@@ -9,9 +9,9 @@ import gevent
 
 from seaborn.meta.class_name import instant_name_to_class_name
 
-from .connection_basic import ConnectionBasic
-from .endpoint import Endpoint
-from .repr_wrapper import rep, repr_return
+from seaborn.request_client.connection_basic import ConnectionBasic
+from seaborn.request_client.endpoint import Endpoint
+from seaborn.request_client.repr_wrapper import rep, repr_return
 
 
 class ConnectionEndpoint(ConnectionBasic):

@@ -25,8 +25,8 @@ log = logging.getLogger(__name__)
 from seaborn.file import mkdir
 from seaborn.meta.calling_function import function_kwargs
 
-from .repr_wrapper import str_name_value
-from .api_call import ApiCall
+from seaborn.request_client.repr_wrapper import str_name_value
+from seaborn.request_client.api_call import ApiCall
 
 STATUS_NONE = 'login not attempted'
 STATUS_LOGIN_FAIL = 'failed to login'

@@ -10,10 +10,9 @@
 
 """
 
-from seaborn.request_client import (endpoint,
-                                    connection_basic,
-                                    connection_endpoint,
-                                    )
+import endpoint
+import connection_basic
+import connection_endpoint
 
 from .repr_wrapper import repr_return
 

@@ -10,8 +10,8 @@ from functools import wraps
 from seaborn.meta.class_name import class_name_to_instant_name
 from seaborn.meta.calling_function import function_arguments
 
-from .repr_wrapper import repr_return
-from .errors import RestException
+from seaborn.request_client.repr_wrapper import repr_return
+from seaborn.request_client.errors import RestException
 
 REST_METHOD_NAMES = 'get put save delete post head option'.split()
 
