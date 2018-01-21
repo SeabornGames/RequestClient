@@ -16,7 +16,7 @@ setup(
     packages=['seaborn'] + ['seaborn.' + i
                             for i in find_packages(where='./seaborn')],
     install_requires=[
-        'seaborn_meta',
+        'seaborn-meta',
         'pyopenssl',
         'gevent',
         'requests',
