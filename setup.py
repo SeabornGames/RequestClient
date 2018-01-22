@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='seaborn_request_client',
-    version='0.0.1',
+    version='0.0.2',
     description='Request Client creates and maintains connections using '
                 'the request library, but make each url endpoint a remote'
                 'procedure call with the response content returned.  '
@@ -23,12 +23,12 @@ setup(
                              'seaborn-flask'],
                     },
     license='MIT License',
-    classifiers=(
+    classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: Other/Proprietary License',
-        'Operating System :: POSIX :: Linux :: Windows',
+        'Operating System :: POSIX :: Linux',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
-    )
+    ]
 )
