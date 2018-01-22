@@ -81,3 +81,4 @@ class BaseTest(TestChain):
         user_conn.user_id = ret['user_id']
         user_conn._status = "logged in from signup"
         return user_conn
+
