@@ -1,0 +1,4 @@
+seaborn-meta==0.0.2
+pyopenssl==17.5.0
+gevent==1.2.2
+requests==2.18.4
