@@ -14,6 +14,7 @@ setup(
     author_email='Python@BenChristenson.com',
     url='https://github.com/SeabornGames/RequestClient',
     install_requires=[
+        'seaborn-hack',
         'seaborn-meta',
         'pyopenssl',
         'gevent',
