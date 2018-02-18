@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='seaborn_request_client',
+    name='seaborn-request-client',
     version='0.0.2',
     description='Request Client creates and maintains connections using '
                 'the request library, but make each url endpoint a remote'
@@ -14,7 +14,6 @@ setup(
     author_email='Python@BenChristenson.com',
     url='https://github.com/SeabornGames/RequestClient',
     install_requires=[
-        'seaborn-hack',
         'seaborn-meta',
         'pyopenssl',
         'gevent',
@@ -28,7 +27,7 @@ setup(
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: Other/Proprietary License',
-        'Operating System :: POSIX :: Linux',
+        'Operating System :: POSIX :: Linux :: Windows',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
     ]
