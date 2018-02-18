@@ -1,4 +1,4 @@
-from seaborn.request_client.repr_wrapper import *
+from seaborn_request_client.repr_wrapper import *
 import unittest
 
 TEST_LIST_LIST = [['a', 'b', 'c', 'd', 'e', 'f', 'g'],

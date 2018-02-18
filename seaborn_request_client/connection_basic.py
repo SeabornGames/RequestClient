@@ -22,8 +22,8 @@ import os
 
 log = logging.getLogger(__name__)
 
-from seaborn.file import mkdir
-from seaborn.meta.calling_function import function_kwargs
+from seaborn_file import mkdir
+from seaborn_meta.calling_function import function_kwargs
 
 from .repr_wrapper import str_name_value
 from .api_call import ApiCall

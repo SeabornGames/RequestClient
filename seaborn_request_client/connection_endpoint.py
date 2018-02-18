@@ -7,7 +7,7 @@ __date__ = "10/8/15"
 import inspect
 import gevent
 
-from seaborn.meta.class_name import instant_name_to_class_name
+from seaborn_meta.class_name import instant_name_to_class_name
 
 from .connection_basic import ConnectionBasic
 from .endpoint import Endpoint

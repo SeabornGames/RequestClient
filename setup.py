@@ -1,15 +1,15 @@
 from setuptools import setup
+import os
+
+with open(os.path.join(os.path.dirname(__file__), 'README.md')) as f:
+    long_description = f.read()
 
 setup(
     name='seaborn-request-client',
-    version='0.0.2',
-    description='Request Client creates and maintains connections using '
-                'the request library, but make each url endpoint a remote'
-                'procedure call with the response content returned.  '
-                'These function calls can made from a "connection" which has'
-                'a hierarchy of objects that mirrors the hierarchy of the '
-                'API.',
-    long_description='',
+    version='1.0.0',
+    description='Request Client is a helper library around the request '
+                'package to help make cleaner code that is easier to debug.',
+    long_description=long_description,
     author='Ben Christenson',
     author_email='Python@BenChristenson.com',
     url='https://github.com/SeabornGames/RequestClient',
@@ -19,6 +19,7 @@ setup(
         'gevent',
         'requests',
     ],
+    packages = ['seaborn_request_client'],
     extras_require={'test': ['test-chain',
                              'seaborn-flask'],
                     },

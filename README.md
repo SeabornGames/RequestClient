@@ -1,6 +1,9 @@
 # Request Client
-Request Client is a helper library around the request package to help make 
-cleaner code that is easier to debug.
+Request Client creates and maintains connections using 
+the request library, but make each url endpoint a remote
+procedure call with the response content returned.  These 
+function calls can made from a "connection" which has
+a hierarchy of objects that mirrors the hierarchy of the API.
 
 # Modules
 ## api_call

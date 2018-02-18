@@ -10,7 +10,7 @@
 
 """
 
-from seaborn.request_client import (endpoint,
+from seaborn_request_client import (endpoint,
                                     connection_basic,
                                     connection_endpoint,
                                     )

@@ -1,6 +1,6 @@
 from .account_access import *
 from .account_transfer import *
-from seaborn.request_client.intellisense.intellisense import Endpoint
+from seaborn_request_client.intellisense.intellisense import Endpoint
 
 
 class Account_Admin_Array(Endpoint):

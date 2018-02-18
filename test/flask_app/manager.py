@@ -2,7 +2,7 @@
     It will run the service but isn't the only way to run the service
 """
 import sys
-from seaborn.flask.setup.manager import setup_manager
+from seaborn_flask.setup.manager import setup_manager
 from test.flask_app.settings.global_import import setup_flask
 
 

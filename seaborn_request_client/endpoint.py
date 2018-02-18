@@ -7,8 +7,8 @@ import logging as log
 import traceback
 from functools import wraps
 
-from seaborn.meta.class_name import class_name_to_instant_name
-from seaborn.meta.calling_function import function_arguments
+from seaborn_meta.class_name import class_name_to_instant_name
+from seaborn_meta.calling_function import function_arguments
 
 from .repr_wrapper import repr_return
 from .errors import RestException

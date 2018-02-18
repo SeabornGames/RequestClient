@@ -16,7 +16,7 @@ except Exception as ex:
 
 try:
     #from test.flask_app.endpoints import endpoints
-    #from seaborn.rest_client.endpoint import endpoints
+    #from seaborn_rest_client.endpoint import endpoints
     import endpoints
 except Exception as ex:
     msg = "Exception in importing endpoints with %s\n\n%s" % \

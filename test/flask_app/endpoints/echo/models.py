@@ -1,5 +1,5 @@
 from test.flask_app.settings.global_import import *
-from seaborn.flask.models import ApiModel
+from seaborn_flask.models import ApiModel
 import logging
 
 log = logging.getLogger(__name__)

@@ -1,6 +1,6 @@
-from seaborn.flask_server.blueprint.blueprint import ProxyEndpoint
+from seaborn_flask_server.blueprint.blueprint import ProxyEndpoint
 from seaborn import *
-from seaborn.flask_server.setup.setup_flask import SetupFlask
+from seaborn_flask_server.setup.setup_flask import SetupFlask
 from seaborn import *
 
 from sqlalchemy import *

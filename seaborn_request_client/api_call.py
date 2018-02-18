@@ -20,8 +20,8 @@ import os
 import requests
 from requests.models import PreparedRequest as PreparedRequest_
 from requests.sessions import Session
-from seaborn.file import get_filename
-from seaborn.timestamp import reformat_date
+from seaborn_file import get_filename
+from seaborn_timestamp import reformat_date
 
 from .errors import ApiError, HTTP_STATUS_CODES
 from .repr_wrapper import str_name_value, repr_return, ReprListDict, ReprDict
