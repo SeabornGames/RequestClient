@@ -1,11 +1,15 @@
 from setuptools import setup, find_packages
 import os
-with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as f:
-    long_description = f.read()
+
+try:
+    with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as f:
+        long_description = f.read()
+except:
+    long_description = ''
 
 setup(
     name='seaborn-request-client',
-    version='0.0.1',
+	version='0.0.4',
     description='Request Client creates and maintains connections using '
                 'the request library, but make each url endpoint a remote'
                 'procedure call with the response content returned.  '
@@ -32,7 +36,7 @@ setup(
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: Other/Proprietary License',
-        'Operating System :: POSIX :: Linux :: Windows',
+        'Operating System :: POSIX :: Linux',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
     )

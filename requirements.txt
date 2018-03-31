@@ -1,0 +1,4 @@
+seaborn-metagit+https://github.com/SeabornGames/meta.git#egg=seaborn-meta
+pyopenssl
+gevent
+requests
