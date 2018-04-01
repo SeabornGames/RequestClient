@@ -21,7 +21,7 @@ setup(
     ],
     packages = ['seaborn_request_client'],
     extras_require={'test': ['test-chain',
-                             'seaborn-flask'],
+                             'seaborn-flask-server'],
                     },
     license='MIT License',
     classifiers=[

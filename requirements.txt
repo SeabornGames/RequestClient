@@ -1,4 +1,5 @@
 git+https://github.com/SeabornGames/meta.git#egg=seaborn-meta
+git+https://github.com/SeabornGames/flaskserver.git#egg=seaborn-flask-server
 pyopenssl==17.5.0
 gevent==1.2.2
 requests==2.18.4
