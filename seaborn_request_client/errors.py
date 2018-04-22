@@ -4,9 +4,6 @@
     status_descriptions
 
 """
-__author__ = 'Ben Christenson'
-__date__ = "6/4/16"
-
 import traceback
 from .repr_wrapper import str_name_value
 

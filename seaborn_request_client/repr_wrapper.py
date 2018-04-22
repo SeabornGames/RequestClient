@@ -1,10 +1,14 @@
 """ This contains decorators for making returns nicer to work with in and
     IDLE or Ipython """
 import pprint
-from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 import sys
 
 BASESTRING = str if sys.version_info[0] == 3 else basestring
+UNICODE = str if sys.version_info[0] == 3 else unicode
 PPRINT_INDENT = 2
 PPRINT_WIDTH = 80
 PPRINT_DEPTH = 5
@@ -372,11 +376,11 @@ class ReprStr(str):
         pass
 
 
-class ReprUnicode(unicode):
+class ReprUnicode(UNICODE):
     __class__ = u''.__class__
 
     def __init__(self, original_unicode):
-        self = unicode(original_unicode)
+        self = UNICODE(original_unicode)
 
     def __repr__(self, _repr_running=None):
         return str(self)

@@ -1,8 +1,8 @@
 import os
 import sys
 
-root_folder = os.path.abspath(__file__).replace('\\', '/').rsplit('/test', 1)[0]
-sys.path.append(root_folder)
+root_folder = os.path.abspath(__file__).replace('\\', '/').rsplit('/test', 2)[0]
+sys.path.insert(0, root_folder)
 from test.test_account import AccountTest
 from seaborn_request_client.errors import *
 

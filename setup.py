@@ -15,6 +15,7 @@ setup(
     url='https://github.com/SeabornGames/RequestClient',
     install_requires=[
         'seaborn-meta',
+        'seaborn-logger',
         'pyopenssl',
         'gevent',
         'requests',
